@@ -1,0 +1,161 @@
+/**header{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1rem;
+    color: rgb(228, 143, 68);
+    text-align: center;  
+    background-size: cover;
+    background-position: center;
+}
+p header{
+    font: 0.8rem;
+}
+.column-container header{
+    text-align: center;
+    /*background-image: url(../images/headerbuns.jpg);
+    background-color: lemonchiffon;
+}
+.column-container {
+    margin:auto;
+    width: 100%;
+    font-size: 0.6rem;
+}
+@media (min-width:520px){
+    .column-container {
+    padding: 120px 0 120px 0;
+    }
+}
+@media (max-width: 520px){
+    h1{
+        font-size: 2rem;
+    }
+    .column-container {
+        padding: 120px 30px 120px 30px;
+    }
+}
+body{
+    margin: 0;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 100px;
+}
+.header-container{
+    display: flex;
+}
+.header-img{
+    width: 95%;
+    height: 400px;
+    background-image: url(../images/headerbuns.jpg);
+    background-size: cover;
+    background-position: center 50%;
+}
+.header-description{
+    background-color: lemonchiffon;
+    /*flex: 1;*/
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-description p:nth-of-type(1){
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(199, 118, 39);
+}
+.header-description p:nth-of-type(2){
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(199, 118, 39);
+    padding-bottom: 10px;
+}
+.header-description p{
+    line-height: 1.5;
+    color: saddlebrown;
+    font-family: 'Signika', sans-serif;
+}
+.description-container{
+    margin: 10px 0;
+    padding: 20px;
+    height:fit-content;
+    background-color: lemonchiffon;
+    color: saddlebrown;
+    font-family: 'Signika', sans-serif;
+}
+@media screen and (min-width: 800px){
+    .min-header-container, .min-header-img, .min-header-description, .min-ingredients-list, .min-ingredients-img{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    body{
+        margin: 0;
+    }
+    .header-container{
+        display: none;
+    }
+    .min-header-container{
+        padding: 0 20px;
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Permanent Marker', cursive;
+        display: block;
+        background-color: lemonchiffon;
+        color: rgb(199, 118, 39);
+        text-align: center;
+    }
+    .min-header-container:nth-of-type(2){
+        font-size: 12px;
+        font-weight: bold;
+        font-family: 'Permanent Marker', cursive;
+        color: rgb(199, 118, 39);
+        padding-bottom: 10px;
+    }
+    .min-header-img{
+        background-image: url(../images/headerbuns.jpg);
+        display: block;
+        height: 200px;
+        background-size: cover;
+        background-position: center 50%;
+    }
+    .min-header-description{
+        padding: 30px 20px;
+        display: block;
+        background-color: lemonchiffon;
+        color: saddlebrown;
+        font-family: 'Signika', sans-serif;
+    }
+    .min-ingredients-list{
+        height:fit-content;
+        background-color: lemonchiffon;
+        margin: 10px 0;
+        color: saddlebrown;
+        font-family: 'Signika', sans-serif;
+        padding: 20px;
+    }
+    .min-ingredients-list p{
+        padding-top: 10px;
+    }
+    .min-ingredients-img{
+        display: block;
+        aspect-ratio: 1/1;
+    }
+    .min-ingredients-img > div{
+        width: 100%;
+        height: 250px;
+        background-size:cover;
+        background-position: center;
+        position: relative;
+    }
+    .min-ingredients-img div:nth-of-type(1){
+        background-image: url(../images/breaddoughcaptions.jpg);
+    }
+    .min-ingredients-img div:nth-of-type(2){
+        background-image: url(../images/toppingdoughcaptions.jpg);
+    }
+}
