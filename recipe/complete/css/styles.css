@@ -1,0 +1,296 @@
+/**header{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1rem;
+    color: rgb(228, 143, 68);
+    text-align: center;  
+    background-size: cover;
+    background-position: center;
+}
+p header{
+    font: 0.8rem;
+}
+.column-container header{
+    text-align: center;
+    /*background-image: url(../images/headerbuns.jpg);
+    background-color: lemonchiffon;
+}
+.column-container {
+    margin:auto;
+    width: 100%;
+    font-size: 0.6rem;
+}
+@media (min-width:520px){
+    .column-container {
+    padding: 120px 0 120px 0;
+    }
+}
+@media (max-width: 520px){
+    h1{
+        font-size: 2rem;
+    }
+    .column-container {
+        padding: 120px 30px 120px 30px;
+    }
+}
+body{
+    margin: 0;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 180px;
+    background-color: floralwhite;
+}
+.header-container{
+    display: flex;
+}
+.header-img{
+    width: 95%;
+    background-image: url(../images/headerbuns.jpg);
+    background-size: cover;
+    background-position: center 50%;
+    aspect-ratio: 2266 / 1488;
+}
+.header-description{
+    background-color: lemonchiffon;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-description p:nth-of-type(1){
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(199, 118, 39);
+}
+.header-description p:nth-of-type(2){
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(199, 118, 39);
+    padding-bottom: 20px;
+    line-height: 1;
+}
+.header-description p:nth-of-type(3){
+    font-weight: bold;
+}
+.header-description p:nth-of-type(5){
+    font-weight: bold;
+}
+.header-description p:nth-of-type(5)::after{
+    display: block;
+    padding-top: 10px;
+    content:"* Dietary Restrictions: this recipe may not be suitable if you are lactose intolerant, gluten-free, or dairy-free";
+    font-style: italic;
+    font-weight: bold;
+    color:rgb(199, 118, 39);
+}
+.header-description p{
+    line-height: 1.5;
+    color: saddlebrown;
+    font-family: 'Signika', sans-serif;
+}
+.description-container{
+    margin: 10px 0;
+    padding: 20px;
+    height:fit-content;
+    background-color: lemonchiffon;
+    color: saddlebrown;
+    font-family: 'Signika', sans-serif;
+}
+.ingredients{
+    display: flex;
+}
+.ingredient-list{
+    background-color: lemonchiffon;
+    color: saddlebrown;
+    font-family: 'Signika', sans-serif;
+    padding: 20px;
+    width: 65%;
+}
+.ingredient-list p{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.ingredients-img{
+    width: 33%;
+}
+.ingredients-img > div{
+    display: flex;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    aspect-ratio: 2266 / 1488;
+}
+.ingredients-img div:nth-of-type(1){
+    background-image: url(../images/breaddough.jpg);
+}
+.ingredients-img div:nth-of-type(2){
+    background-image: url(../images/toppingdough.jpg);
+}
+.ingredients-img div:nth-of-type(1):hover {
+    background-image: url(../images/breaddoughcaptions.jpg);
+}
+.ingredients-img div:nth-of-type(2):hover{
+    background-image: url(../images/toppingdoughcaptions.jpg);
+} 
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.swiper-container1{
+    display: none!important;
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+.instructions-p {
+    background-color: lemonchiffon;
+    color: saddlebrown;
+    font-family: 'Signika', sans-serif;
+    padding: 20px;
+    /*display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;*/
+}
+.instructions-p h2:nth-of-type(1):after{
+    display: block;
+    padding-bottom: 10px;
+    content:"* swipe for the next page";
+    font-style: italic;
+    color:rgb(199, 118, 39);
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+}
+.instructions-img {
+    width: 30%;
+    margin-right: 20px;
+}
+@media screen and (min-width: 800px){
+    .min-header-container, .min-header-img, .min-header-description, .min-ingredients-list, .min-ingredients-img{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    body{
+        margin: 0;
+    }
+    .header-container{
+        display: none;
+    }
+    .ingredient-list{
+        display: none;
+    }
+    .ingredients-img{
+        display: none; 
+    }
+    .min-header-container{
+        padding: 0 20px;
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Permanent Marker', cursive;
+        display: block;
+        background-color: lemonchiffon;
+        color: rgb(199, 118, 39);
+        text-align: center;
+    }
+    .min-header-container:nth-of-type(2){
+        font-size: 12px;
+        font-weight: bold;
+        font-family: 'Permanent Marker', cursive;
+        color: rgb(199, 118, 39);
+        padding-bottom: 10px;
+    }
+    .min-header-img{
+        background-image: url(../images/headerbuns.jpg);
+        display: flex;
+        background-size: cover;
+        background-position: center 50%;
+        aspect-ratio: 2266 / 1488;
+    }
+    .min-header-description{
+        padding: 30px 20px;
+        display: block;
+        background-color: lemonchiffon;
+        color: saddlebrown;
+        font-family: 'Signika', sans-serif;
+    }
+    .min-header-description p:nth-of-type(1){
+        font-weight: bold;
+    }
+    .min-header-description p:nth-of-type(3){
+        font-weight: bold;
+    }
+    .min-header-description p:nth-of-type(3)::after{
+        display: block;
+        padding-top: 10px;
+        content:"* Dietary Restrictions: this recipe may not be suitable if you are lactose intolerant, gluten-free, or dairy-free";
+        font-style: italic;
+        color:rgb(199, 118, 39);
+    }
+    .min-ingredients-list{
+        height:fit-content;
+        background-color: lemonchiffon;
+        margin: 10px 0;
+        color: saddlebrown;
+        font-family: 'Signika', sans-serif;
+        padding: 20px;
+    }
+    .min-ingredients-list p{
+        padding-top: 10px;
+        font-weight: bold;
+    }
+    .min-ingredients-img{
+        display: flex;
+    }
+    .min-ingredients-img > div{
+        width: 50%;
+        background-size:cover;
+        background-position: center;
+        position: relative;
+        aspect-ratio: 2266 / 1488;
+    }
+    .min-ingredients-img div:nth-of-type(1){
+        background-image: url(../images/breaddough.jpg);
+    }
+    .min-ingredients-img div:nth-of-type(2){
+        background-image: url(../images/toppingdough.jpg);
+    }
+    .min-ingredients-img div:nth-of-type(1):hover {
+        background-image: url(../images/breaddoughcaptions.jpg);
+    }
+    .min-ingredients-img div:nth-of-type(2):hover{
+        background-image: url(../images/toppingdoughcaptions.jpg);
+    }
+}
+a{
+    color:rgb(228, 143, 68);
+    font-size: 16px;
+}
+a:hover{
+    font-weight: bold;
+}
