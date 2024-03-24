@@ -1,0 +1,246 @@
+a#btn_botanical{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+    font-family: "transat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 1.563rem;
+    background-color: #F3D174;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    color:#006B36;
+    border-color: #F3D174;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px transparent;
+}
+a#btn_botanical:hover{
+    border-color: #f4d682;
+    background-color: #f5d889;
+    color: #00AB56;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    transition: box-shadow 0.5s;
+}
+a#btn_botanical:active{
+    background-color: #f5da90;
+    border-color: #f4d682;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    transition: box-shadow 0.5s;
+}
+.tesla img{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    opacity: 0.7;
+    transform:translateY(-20px);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.tesla img:hover{
+    transform: scale(0.8) translateY(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.tesla img:active{
+    transform: scale(0.8) translateY(0);
+    transition: transform 0.5s;
+}
+#pottermorecontainer {
+    background-color: black;
+}
+.pottermore img{
+    width:200px;
+    height: auto;
+    margin-top: 40px;
+    filter: invert(100%) drop-shadow(0 0 5px #ffffff);
+    transition: transform 0.5s, filter 0.3s ease;
+}
+.pottermore img:hover{
+    transform: scale(1.05) rotate(5deg);
+    filter:invert(100%) drop-shadow(0 0 25px #ffd700);
+}
+@font-face {
+    font-family: Billabong;
+    src: url(publish/buttons/fonts/Billabong/billabong.ttf) format('truetype');
+}
+a#btn_instagram{
+    font-family: Billabong, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    margin-top: 80px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.5s ease, background 0.5s ease;
+}
+a#btn_instagram:hover{
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4f5bd5+2,962fbf+21,d62976+40,fa7e1e+76,feda75+100 */
+    background: linear-gradient(to bottom,  #4f5bd5 2%,#962fbf 21%,#d62976 40%,#fa7e1e 76%,#feda75 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-size: 100% 100%;
+    color: white;
+}
+@font-face {
+    font-family: Samsung;
+    src: url(publish/buttons/fonts/samsung.ttf) format('truetype');
+}
+a#btn_samsung{
+    font-family: Samsung;
+    text-decoration: none;
+    margin-top: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: .97222222vw;
+    color: #1428a0;
+    padding: 0.69444444vw 1.66666667vw 0.76388889vw 1.66666667vw;
+    transition: color 0.5s ease border 0.5s;
+    border: 2px solid #1428a0;
+    border-radius: 1.38888889vw;
+    background-color: white;
+}
+a#btn_samsung:hover{
+    border: 2px solid black;
+    border-radius: 1.38888889vw;
+    background-color: black;
+    color: white;
+}
+@keyframes borderAnimation {
+    0% { 
+        color:white;
+        background: #163e69; 
+    }
+    50% {
+        color:#163e69; 
+        background: linear-gradient(90deg, rgb(241, 234, 215) 50%, rgb(241, 234, 215) 50%); 
+    } 
+    100% { 
+        color:white;
+        background: #163e69; 
+    }
+}
+a#btn_oldnavy{
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid #163e69;
+    color: #163e69;
+    padding: 12px 34px;
+    border-radius: 84px / 31px;
+    font-size: 20px;
+    background-color: #fff; 
+    text-align: center; 
+    animation: borderAnimation 5s infinite linear; 
+}
+a#btn_army{
+    background: #221f20;
+    text-decoration: none;
+    margin-top: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    font: 700 1.5em / 1.5 GI, Overpass, sans-serif;
+    padding: 20px 40px;
+    transition: color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+a#btn_army::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.4s ease;
+    z-index: 0;
+}
+a#btn_army:hover::before{
+    left: 0;
+}
+a#btn_army span{
+    position: relative;
+    z-index: 1;
+}
+a#btn_army:hover{
+    background: white;
+    color: #221f20;
+}
+@font-face {
+    font-family: Harley;
+    src: url(publish/buttons/fonts/AmericanCaptain-MdEY.otf) format('opentype');
+}
+a#btn_harley{
+    text-decoration: none;
+    margin-top: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: Harley;
+    font-size: 30px;
+    color: black;
+    padding: 20px 20px 14px 20px;
+    background-color: #f48332;
+    border: 2px solid #000;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+a#btn_harley:hover, a#btn_harley:focus {
+    transform: translateY(2px); 
+    background-color: #E0E0E0; 
+    color: #000; 
+}
+a#btn_pastaria{
+    text-decoration: none;
+    margin-top: 110px;
+    display: inline-block;
+    box-sizing: border-box;
+    color:#f04924;
+    font-family: Oswald;
+    font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+    border: 2px solid #f04924;
+    border-radius: 5px;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.2s ease;
+}
+a#btn_pastaria:hover, a#btn_pastaria:focus{
+    background-color: #f04924;
+    color:white;
+    transform: scale(1.05);
+}
+@font-face {
+    font-family: NewYorker;
+    src: url(publish/buttons/fonts/NewYorker-6Y46.ttf) format('truetype');
+}
+a#btn_newyorker{
+    text-decoration: none;
+    margin-top: 110px;
+    display: inline-block;
+    box-sizing: border-box;
+    color:black;
+    font-size: 30px;
+    font-family: NewYorker, 'Helvetica Neue', Arial, sans-serif;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3 ease;
+}
+a#btn_newyorker::after{
+    content:'';
+    position:absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: black;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+a#btn_newyorker:hover::after, a#btn_newyorker:focus::after{
+    width: 100%;
+    left: 0;
+}
