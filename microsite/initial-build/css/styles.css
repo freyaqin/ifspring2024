@@ -1,0 +1,178 @@
+body, h1, h2, h3, p{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:#3B1B0A;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    padding: 50px 0;
+}
+h2{
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px 0;
+    font-size: 40px;
+}
+h3{
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 0;
+    font-size: 24px;
+}
+#home{
+    margin: 0;
+}
+#description-body{
+    background-color: #FBF1E4;
+}
+#ecology-body{
+    background-color: #DBE1E5;
+}
+#social-body{
+    background-color: #dbebcf;
+}
+#conservation-body{
+    background-color: #EED4C0;
+}
+#culture-body{
+    background-color: #DBD9CA;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.flex-container{
+    margin:0 180px;
+}
+.container{
+    margin: auto;
+}
+.nav{
+    background: #F2BD8B;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+.nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3B1B0A;
+}
+.section{
+    padding: 20px;
+    
+}
+#home-page{
+    background-image: url(../images/home-capybara.jpg);
+    aspect-ratio: 1651 / 1210;
+    margin: 0;
+    width: 100%;
+    height: 900px;
+}
+.text-box{
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #3B1B0A;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+#home-text{
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #3B1B0A;
+    margin: 20px 180px;
+}
+.image{
+    margin-bottom: 20px;
+}
+#description{
+    background-image: url(../images/description-capybara.png);
+    aspect-ratio: 257 / 295;
+    width: 15%;
+}
+#description-sticker{
+    background-image: url(../images/description-stickers.png);
+    aspect-ratio: 200 / 173;
+    width: 12%;
+}
+#ecology{
+    background-image: url(../images/ecology-capybara.png);
+    aspect-ratio: 381 / 299;
+    width: 22%;
+}
+#ecology-sticker{
+    background-image: url(../images/ecology-stickers.png);
+    aspect-ratio: 200 / 191;
+    width: 12%;
+}
+#social{
+    background-image: url(../images/social-capybara.png);
+    aspect-ratio: 231 / 246;
+    width: 13%;
+}
+#social-sticker{
+    background-image: url(../images/social-sticker.png);
+    aspect-ratio: 200 / 192;
+    width: 11.2%;
+}
+#conservation{
+    background-image: url(../images/conservation-capybara.png);
+    aspect-ratio: 312 / 227;
+    width: 18%;
+}
+#conservation-sticker{
+    background-image: url(../images/conservation-sticker.png);
+    aspect-ratio: 165 / 166;
+    width: 9%;
+}
+#culture{
+    background-image: url(../images/culture-capybara.png);
+    aspect-ratio: 828 / 329;
+    width: 60%;
+}
+#culture-sticker{
+    background-image: url(../images/culture-sticker.png);
+    aspect-ratio: 148 / 147;
+    width: 10%;
+}
+.fun-fact{
+    padding: 20px;
+    background: #FBF1E4;
+    border: 1px solid #3B1B0A;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+}
+.footer{
+    height: fit-content;
+    background: #FBF1E4;
+    padding: 20px;
+    font-size: 10px;
+}
+@media screen and (max-width: 800px){
+    #home-text{
+        margin: 20px 20px;
+    }
+    .flex-container{
+        margin:0 20px;
+    }
+    #description, #description-sticker, #ecology, #ecology-sticker, #social, #social-sticker, #conservation, #conservation-sticker, #culture, #culture-sticker{
+        display: none;
+    }
+}
